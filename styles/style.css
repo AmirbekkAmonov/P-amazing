@@ -1,0 +1,805 @@
+@font-face {
+  font-family: "aBS";
+  src: url(../assets/fonts/LinLibertine_aBS.ttf);
+}
+@font-face {
+  font-family: "RZ";
+  src: url(../assets/fonts/LinLibertine_RZ.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: RZ, sans-serif;
+  background-color: #ECEFF5;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.amazing {
+  width: 100%;
+  height: auto;
+}
+.amazing .container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.amazing__menubar {
+  width: 10%;
+  height: 138vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 30px;
+  gap: 50px;
+}
+.amazing__menubar img {
+  width: 100%;
+  height: auto;
+}
+.amazing__menubar .menu_cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.amazing__menubar .menu_cards .menu_card {
+  width: 90%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.amazing__menubar .menu_cards .menu_card:hover {
+  background-color: #ECEFF5;
+}
+.amazing__menubar .menu_cards .menu_card img {
+  width: 80%;
+  height: auto;
+}
+.amazing__menubar .menu_cards .active {
+  box-shadow: 2px 19px 31px 0px rgba(0, 0, 0, 0.0588235294);
+}
+.amazing__content {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+}
+.amazing__content__header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.amazing__content__header .search {
+  width: calc(75% - 30px);
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.amazing__content__header .search h1 {
+  width: 30%;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 26.22px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+}
+.amazing__content__header .search form {
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amazing__content__header .search form input {
+  width: 100%;
+  height: auto;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(5, 7, 41, 0.7764705882);
+  transition: all 0.3s ease-in-out;
+}
+.amazing__content__header .search form input::-moz-placeholder {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 13.68px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(5, 7, 41, 0.3843137255);
+}
+.amazing__content__header .search form input::placeholder {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 13.68px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgba(5, 7, 41, 0.3843137255);
+}
+.amazing__content__header .search form input:focus {
+  box-shadow: 2px 19px 31px 0px rgba(0, 0, 0, 0.0588235294);
+}
+.amazing__content__header .profile {
+  width: 26%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.amazing__content__header .profile p {
+  width: 40%;
+  margin: 0 20px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.1px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+}
+.amazing__content__header .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.amazing__content__header .profile img:hover {
+  box-shadow: 2px 19px 31px 0px rgba(0, 0, 0, 0.0588235294);
+}
+.amazing__content__header .profile .notification {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.amazing__content__header .profile .notification:hover {
+  box-shadow: 2px 19px 31px 0px rgba(0, 0, 0, 0.0588235294);
+}
+.amazing__content__header .profile .notification img {
+  width: 20px;
+  height: 20px;
+}
+.amazing__content .gaming {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.amazing__content .gaming__card {
+  margin-top: 20px;
+  position: relative;
+  width: calc(75% - 30px);
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 15px;
+  -webkit-backdrop-filter: blur(281px);
+          backdrop-filter: blur(281px);
+  background: linear-gradient(262.8deg, #5B82CE 0%, #283C64 99.45%);
+}
+.amazing__content .gaming__card__text {
+  padding: 68px;
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.amazing__content .gaming__card__text p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.1px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #F4F5FA;
+}
+.amazing__content .gaming__card__text b {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 52.45px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #F4F5FA;
+}
+.amazing__content .gaming__card__text .btn {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 15px 25px;
+  background-color: #5E8DEA;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.amazing__content .gaming__card__text .btn:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 19px 31px 10px rgba(0, 0, 0, 0.0588235294);
+}
+.amazing__content .gaming__card__text .btn p {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 22.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #F4F5FA;
+}
+.amazing__content .gaming__card__text .btn .arrow {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amazing__content .gaming__card__img {
+  position: absolute;
+  width: 45%;
+  height: auto;
+  top: -30px;
+  right: 30px;
+}
+.amazing__content .gaming__card2 {
+  margin-top: 20px;
+  width: 26%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.1019607843);
+  background-color: #FFFFFF;
+  -webkit-backdrop-filter: blur(281px);
+          backdrop-filter: blur(281px);
+  padding: 28px 34px;
+}
+.amazing__content .gaming__card2 p {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 26.22px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+}
+.amazing__content .gaming__card2 .cards {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.amazing__content .gaming__card2 .cards .card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.amazing__content .gaming__card2 .cards .card__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.amazing__content .gaming__card2 .cards .card__img img {
+  width: 45px;
+  height: 45px;
+}
+.amazing__content .gaming__card2 .cards .card__img .card__text {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.amazing__content .gaming__card2 .cards .card__img .card__text p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.68px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #3D3F5A;
+}
+.amazing__content .gaming__card2 .cards .card__img .card__text b {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.1px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #000000;
+}
+.amazing__content .gaming__card2 .cards .card button {
+  width: auto;
+  height: auto;
+  border: none;
+  padding: 8px 12px;
+  background-color: #FAF9FE;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 11.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #5E8DEA;
+}
+.amazing__content .gaming__card2 .cards .card button:hover {
+  color: #FAF9FE;
+  background-color: #5E8DEA;
+  transform: scale(1.01);
+  box-shadow: 2px 19px 31px 10px rgba(0, 0, 0, 0.0588235294);
+}
+.amazing__content .gaming__card2 img {
+  width: 100%;
+  height: auto;
+}
+.amazing__content .game {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.amazing__content .game__cards {
+  width: 75%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.amazing__content .game__cards .game__card {
+  width: calc(33.3333333333% - 20px);
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.amazing__content .game__cards .game__card:nth-child(1) {
+  background-color: transparent;
+  gap: 18px;
+}
+.amazing__content .game__cards .game__card:nth-child(1) h2 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 26.22px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+  margin-bottom: 20px;
+}
+.amazing__content .game__cards .game__card:nth-child(1) button {
+  width: 100%;
+  height: auto;
+  border: none;
+  padding: 16px;
+  background-color: #FAF9FE !important;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 11.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #9394A5;
+}
+.amazing__content .game__cards .game__card:nth-child(1) button:hover {
+  color: #050729;
+  transform: scale(1.01);
+  box-shadow: 2px 19px 31px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.amazing__content .game__cards .game__card img {
+  width: 100%;
+  height: auto;
+}
+.amazing__content .game__cards .game__card__text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+}
+.amazing__content .game__cards .game__card__text b {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.1px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+}
+.amazing__content .game__cards .game__card__text__stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.amazing__content .game__cards .game__card__text__stars .star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.amazing__content .game__cards .game__card__text__stars .star img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.amazing__content .game__cards .game__card__text__stars .save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.amazing__content .game__cards .game__card__text__stars .save img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.amazing__content .game__cards .game__card button {
+  width: 100%;
+  height: auto;
+  border: none;
+  padding: 8px;
+  background-color: #5E8DEA;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 11.4px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.amazing__content .game__cards .game__card button:hover {
+  color: #ffffff;
+  background-color: #3375fa;
+  transform: scale(1.01);
+  box-shadow: 2px 19px 31px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.amazing__content .game .game__card2 {
+  width: 26%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.amazing__content .game .game__card2:nth-child(1) {
+  background-color: transparent;
+  gap: 18px;
+}
+.amazing__content .game .game__card2:nth-child(1) h2 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 26.22px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+  margin-bottom: 20px;
+}
+.amazing__content .game .game__card2:nth-child(1) button {
+  width: 100%;
+  height: auto;
+  border: none;
+  padding: 16px;
+  background-color: #FAF9FE;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 11.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #9394A5;
+}
+.amazing__content .game .game__card2:nth-child(1) button:hover {
+  color: #050729;
+  transform: scale(1.01);
+  box-shadow: 2px 19px 31px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.amazing__content .game .game__card2 img {
+  width: 100%;
+  height: 180px;
+}
+.amazing__content .game .game__card2__text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+}
+.amazing__content .game .game__card2__text b {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.1px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+}
+.amazing__content .game .game__card2__text__stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.amazing__content .game .game__card2__text__stars .star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.amazing__content .game .game__card2__text__stars .star img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.amazing__content .game .game__card2__text__stars .save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.amazing__content .game .game__card2__text__stars .save img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.amazing__content .game .game__card2 button {
+  width: 100%;
+  height: auto;
+  border: none;
+  padding: 8px;
+  background-color: #5E8DEA;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 11.4px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.amazing__content .game .game__card2 button:hover {
+  color: #ffffff;
+  background-color: #3375fa;
+  transform: scale(1.01);
+  box-shadow: 2px 19px 31px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.amazing__content .footer {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.amazing__content .footer h3 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 26.22px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+}
+.amazing__content .footer__dowenload {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  padding: 24px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.amazing__content .footer__dowenload img {
+  width: 45px;
+  height: 45px;
+}
+.amazing__content .footer__dowenload__text {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+}
+.amazing__content .footer__dowenload__text b {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.1px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+}
+.amazing__content .footer__dowenload__text p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.68px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #3D3F5A;
+}
+.amazing__content .footer__dowenload .Downloaded {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.amazing__content .footer__dowenload .Downloaded .download__text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10px;
+}
+.amazing__content .footer__dowenload .Downloaded .download__text p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.1px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+}
+.amazing__content .footer__dowenload .Downloaded__progress {
+  width: 100%;
+  height: 10px;
+  background-color: #FBE9CC;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.amazing__content .footer__dowenload .Downloaded__progress .progress {
+  width: 60%;
+  height: 10px;
+  background-color: #FDBF0F;
+  border-radius: 5px;
+}
+.amazing__content .footer__dowenload__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.amazing__content .footer__dowenload__btn button {
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.68px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #050729;
+  border: 0.5px solid rgba(94, 141, 234, 0.3019607843);
+}
+.amazing__content .footer__dowenload__btn button:hover {
+  color: #5E8DEA;
+  border: 0.5px solid #5E8DEA;
+}/*# sourceMappingURL=style.css.map */
